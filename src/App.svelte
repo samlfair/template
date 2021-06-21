@@ -33,7 +33,6 @@
 {#await promise}
   <p>Loading...</p>
 {:then response}
-  <!-- <pre>{JSON.stringify(response,null,2)}</pre> -->
   {#each response.results as result, index}
     <p>{index + 1}. {PrismicDom.RichText.asText(result.data.title || result.data.prismic_display_name)}</p>
   {:else}
