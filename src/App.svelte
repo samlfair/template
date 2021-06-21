@@ -2,7 +2,6 @@
   import PrismicDom from 'prismic-dom'
   import Prismic from '@prismicio/client'
   import Client from './client'
-  import { onMount } from 'svelte'
   
   const types = [
     {id: "page", name: "Page"},
